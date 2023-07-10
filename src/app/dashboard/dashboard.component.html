@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+      <div class=" col-md-offset-2">
+        <h1>Simple Voting App</h1>
+        <h2>Welcome {{ username }}</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+              <button type="button" class="btn btn-dark w-100" (click)="navigateToCreate()">Create new question</button><br>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+              <button type="button" class="btn btn-dark w-100" (click)="navigateToVote()">View Questions and Vote</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+              <button type="button" class="btn btn-dark w-100" (click)="navigateToResults()">View Results</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-danger w-100" (click)="logout()">Logout</button>
+          </div>
+      </div>
+    </div>
+</div>

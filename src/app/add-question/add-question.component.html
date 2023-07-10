@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <h1>Simple Voting App</h1>
+        <form ngNativeValidate (ngSubmit)= 'save()' [formGroup]= "questionForm">
+          <div class="form-group">
+            <br>
+            Submit your question:<input id="question" class='form-control' type="text" formControlName= "question" required>
+            <span *ngIf= "questionForm.get('question')!.errors && questionForm.get('question')!.touched">Must be between 1 and 200 characters</span><br>
+          </div>
+            <button class="btn btn-info" (click)= 'navigateToDashboard()'>Back to Dashboard</button>
+            <button class="btn btn-dark">Save Question</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
