@@ -15,14 +15,13 @@
           </thead>
           <tbody>
               <tr *ngFor="let q of unansweredQuestions">
-                  <td>{{ q.datestamp }}</td>
+                  <td>{{ q.timestamp }}</td>
                   <td>{{ q.question }}</td>
+                  <!-- TODO: add onclick and corresponding routing to a view to vote on the question -->
+                  <button button class="btn btn-link">Vote</button>
               </tr>
           </tbody>
       </table>
-
-
-      <!-- TODO: Routing service -->
       <button class="btn btn-info" (click)= 'navigateToDashboard()'>Back to Dashboard</button>
   </div>
 </div>

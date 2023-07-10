@@ -12,10 +12,10 @@ export class VoteComponent implements OnInit {
   username = localStorage.getItem('username')
   public questions = this.getExampleData.createDb().questions
   unansweredQuestions: any[] = []
-  // survey_data = localStorage.getItem('local-survey-db')
-  //survey_data = JSON.parse(localStorage.getItem('local-survey-db')!);
   constructor(private getExampleData:VotingDbService, private router: Router) { }
   ngOnInit(): void {
+    //Logic for showing logged in user questions they havent answered
+    //TODO: refactor logic into a method or as a service
     for (let i in this.questions){
       if (this.questions[i]['votersList'].includes(this.username!)) {
         console.log("username found skipping question")

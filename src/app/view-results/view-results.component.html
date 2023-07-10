@@ -2,7 +2,7 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <h1>Simple Voting App</h1>
-        <h2>View Results</h2>
+        <h2>View Results | All Questions</h2>
 
         <!-- Display Table of Questions and Results -->
         <table class="table">
@@ -17,7 +17,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let q of questions">
-                    <td>{{ q.datestamp }}</td>
+                    <td>{{ q.timestamp }}</td>
                     <td>{{ q.question }}</td>
                     <td>{{ (q.yesVotes / (q.yesVotes + q.noVotes)) * 100 }}</td>
                     <td>{{ (q.noVotes / (q.yesVotes + q.noVotes)) * 100}}</td>

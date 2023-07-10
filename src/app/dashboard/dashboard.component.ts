@@ -24,6 +24,7 @@ export class DashboardComponent implements OnInit {
       this.router.navigate(["/results"])
   }
   logout() {
+    // Simple way to destroy stored session username
     localStorage.removeItem('username');
     this.router.navigate(["/login"])
 }

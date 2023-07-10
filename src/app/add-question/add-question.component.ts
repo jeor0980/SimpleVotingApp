@@ -35,9 +35,9 @@ export class AddQuestionComponent implements OnInit{
 
 
   
-navigateToDashboard(){
-  this.router.navigate(["/dashboard"])
-}
+  navigateToDashboard(){
+    this.router.navigate(["/dashboard"])
+  }
 
 
   isUnique(){
