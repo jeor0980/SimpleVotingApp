@@ -10,8 +10,9 @@ This Angular application is written in TypeScript and uses [Bootstrap CSS](https
 You will need the following to run this application locally:
 1. Install Node.js https://nodejs.org/en/download/
 2. Install the Angular-CLI `npm install -g @angular/cli`
-
-Once those are installed run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+3. Clone this repo to your machine
+   
+Once you've completed the steps above run `ng serve` from inside the `SimpleVotingApp` directory for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Build
 
